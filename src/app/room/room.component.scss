@@ -1,0 +1,42 @@
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.search-container {
+  height: 100vh;
+  color: black;
+  font-weight: bold;
+  background-color: gray;
+  padding: 25px;
+}
+
+.rooms-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.room {
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+}
+
+.white-board{
+  background-color: white;
+  height: 200px;
+  padding: 25px 0;
+  overflow: auto;
+
+  ul{
+    list-style: none;
+  }
+}

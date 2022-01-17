@@ -1,0 +1,20 @@
+<div class="container col-12 main-container">
+  <div class="row no-gutters">
+    <div class="col-8 no-gutters">
+      <img src="assets/images/new-uni-map.jpg" alt="uok map">
+    </div>
+    <div class="col-4 no-gutters float-right">
+      <div class="search-container" [formGroup]="homeFormGroup">
+        <div class="form-group">
+          <label for="department">Department</label>
+          <input type="email" class="form-control" id="department" placeholder="Enter Department" formControlName="department">
+        </div>
+        <div class="form-group">
+          <label for="block">Block</label>
+          <input type="text" class="form-control" id="block" placeholder="Enter Block" formControlName="block">
+        </div>
+        <button type="submit" class="btn btn-primary form-control" (click)="onClickNext()">Next</button>
+      </div>
+    </div>
+  </div>
+</div>

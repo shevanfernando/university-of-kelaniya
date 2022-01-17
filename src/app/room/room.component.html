@@ -1,0 +1,33 @@
+<div class="container col-12 main-container">
+  <div class="row no-gutters">
+    <div class="col-8 no-gutters" style="display: flex; flex-direction: column; justify-content: center;">
+      <div class="rooms-container">
+        <div *ngFor="let room of rooms" [class]="room.is_booked == true ? 'bg-success room' : 'bg-danger room'">
+          <h5>Room No. {{room.no}}</h5>
+          <h6>SEATS {{room.no_seats}}</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 no-gutters float-right">
+      <div class="search-container">
+        <div class="form-group">
+          <label>Available</label>
+          <div class="white-board">
+            <ul>
+              <li *ngFor="let availableRoom of availableRooms">Room No  {{availableRoom}}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Booked</label>
+          <div class="white-board">
+            <ul>
+              <li *ngFor="let bookedRoom of bookedRooms">Room No {{bookedRoom}}</li>
+            </ul>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary form-control" (click)="onClickNext()">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
